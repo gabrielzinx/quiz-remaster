@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a class="logo" href="/">QuizApp</a>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Perfil</a>
+            <a href="#">Sair</a>
+        </nav>
+    </header>
+    <main>
+        <section id="preview" class="preview">
+            <div>
+                <h1>Welcome a QuizGame!</h1>
+            </div>
+            <div>
+                <button id="button-started">Get Started</button>
+            </div>
+        </section>
+        <div id="loader" class="loader">
+            <div class="ring"></div>
+            <span></span>
+        </div>
+        <section id="quiz" class="quiz">
+            <section id="questionHeader" class="questionHeader">
+                <div id="questionWord" class="questionWord">
+                    <p></p>
+                </div>
+                <div id="questionNumber" class="questionNumber">
+                    <p></p>
+                </div>
+            </section>
+            <div id="timer" class="timer">
+                <div></div>
+                <p id="clock">60</p>
+            </div>
+            <section id="alternatives" class="alternatives">
+                <div id="alternative-1"><p>• Alternativa 1</p></div>
+                <div id="alternative-2"><p>• Alternativa 2</p></div>
+                <div id="alternative-3"><p>• Alternativa 3</p></div>
+                <div id="alternative-4"><p>• Alternativa 4</p></div>
+            </section>
+        </section>
+        <section id="result" class="result">
+            <p>Obrigado por fazer o Quiz!!</p>
+            <p id="points" class="points"></p>
+        </section>
+    </main>
+    <footer id="footer" class="footer">
+        <div>
+            <a href="#">Help</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Feedback</a>
+        </div>
+        <div>
+            <p>Copyright © 2022 by <a id="github" class="github" href="https://www.github.com/sherlock5063" target="_blank">Gabriel</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
