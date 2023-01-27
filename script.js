@@ -53,14 +53,14 @@ buttonStarted.addEventListener("click", () => {
 
 for (const button in buttons) {
     buttons[button].addEventListener("click", () => {
-    collectInformations(button.substring(11));
-    if (button.substring(11) == answer[currentQuestion]) {
-        buttons[button].style.backgroundColor = "#00c04b";
-    } else {
-        buttons[button].style.backgroundColor = "red";
-        buttons[`alternative${answer[currentQuestion]}`].style.backgroundColor = "#00c04b";
-    }
-    setTimeout(() => {
+        collectInformations(button.substring(11));
+        if (button.substring(11) == answer[currentQuestion]) {
+            buttons[button].style.backgroundColor = "#00c04b";
+        } else {
+            buttons[button].style.backgroundColor = "red";
+            buttons[`alternative${answer[currentQuestion]}`].style.backgroundColor = "#00c04b";
+        };
+        setTimeout(() => {
             timer.innerText = 100;
             quiz.style.display = "none";
             loader.style.display = "flex";
@@ -82,7 +82,7 @@ function nextQuestion() {
     } else {
         timer.innerText = 40;
         updateQuestions();
-    }
+    };
 };
 
 function updateQuestions() {
@@ -131,6 +131,6 @@ function collectInformations(answer) {
 
 function main() {
     updateQuestions();
-}
+};
 
 main();
